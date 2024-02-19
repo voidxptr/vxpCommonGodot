@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxuh2poxhwoav"]
+
+[ext_resource type="PackedScene" uid="uid://cbv80dmmaotd" path="res://src/char_fps3d/voidxptrPlayer.tscn" id="1_5ypi3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_85k2x"]
+size = Vector3(100, 0.1, 100)
+
+[node name="Test" type="Node3D"]
+
+[node name="Ground" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_85k2x")
+
+[node name="VoidxptrPlayer" parent="." instance=ExtResource("1_5ypi3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
