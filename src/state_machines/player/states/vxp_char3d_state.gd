@@ -3,18 +3,18 @@ class_name vxpChar3DState
 
 @export var player:CharacterBody3D
 
-enum STATE {
+enum State {
 	Null, # Used if state should NOT change.
 }
 
-func enter(_last:STATE) -> void:
+func enter(_last:State) -> void:
 	pass
 
-func physics_process(_delta: float) -> STATE:
-	return STATE.Null
+func physics_process(_delta: float) -> State:
+	return State.Null
 
-func process(_delta: float) -> STATE:
-	return STATE.Null
+func process(_delta: float) -> State:
+	return State.Null
 
-func exit(_next:STATE) -> void:
+func exit(_next:State) -> void:
 	pass
