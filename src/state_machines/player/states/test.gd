@@ -1,0 +1,1 @@
+extends vxpChar3DState
