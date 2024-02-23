@@ -7,10 +7,11 @@
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mjblx"]
 height = 1.8
 
-[node name="VoidxptrPlayer" type="CharacterBody3D" node_paths=PackedStringArray("camera")]
+[node name="VoidxptrPlayer" type="CharacterBody3D" node_paths=PackedStringArray("camera", "state_machine")]
 collision_layer = 2
 script = ExtResource("1_rmryw")
 camera = NodePath("VoidxptrCamera")
+state_machine = NodePath("StateMachine")
 
 [node name="Collision" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_mjblx")

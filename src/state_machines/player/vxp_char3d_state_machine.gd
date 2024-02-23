@@ -16,6 +16,9 @@ func _setup_state_dic()->void:
 
 var cur_state:vxpChar3DState.State = vxpChar3DState.State.Null # TODO: Change to actull start state.
 
+func _ready() -> void:
+	_setup_state_dic()
+
 func change_state(next:vxpChar3DState.State) -> void:
 	if next == vxpChar3DState.State.Null:
 		return
