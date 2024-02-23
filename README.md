@@ -5,7 +5,7 @@ If you read this and you're beginning to learn Godot ... *DON'T* just use this, 
 # Q&A:
 
 ## Why is it here?
-I don't really know ... I like OpenSource and I'm planning to realease some thing using this anyway so couldn't really hurt to make this public.
+I don't really know ... I like OpenSource and I'm planning to release some things using this anyway so couldn't really hurt to make this public.
 
 ## Can I use this?
-Sure, I would appreciate credit, but it's not like I could prove that you used this anyways.
+Sure, I would appreciate credit, but it's not like I could prove that you used this anyway.
