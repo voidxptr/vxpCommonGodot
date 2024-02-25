@@ -5,6 +5,7 @@
 
 [sub_resource type="Theme" id="Theme_2bnw2"]
 default_font = ExtResource("1_adi63")
+default_font_size = 22
 
 [node name="Osl" type="Control" node_paths=PackedStringArray("container")]
 layout_mode = 3
