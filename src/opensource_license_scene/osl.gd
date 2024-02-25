@@ -4,7 +4,6 @@ extends Control
 
 func _ready() -> void:
 	_build_tab("Godot", Engine.get_license_text())
-
 	_build_tab("FreeType",
 	"""Portions of this software are copyright © <year> The FreeType Project (www.freetype.org). All rights reserved.
 	""" #NOTE:<year> should correspond to the value from the FreeType version used in your build. This information can be found in the editor by opening the Help > About dialog and going to the Third-party Licenses tab.
