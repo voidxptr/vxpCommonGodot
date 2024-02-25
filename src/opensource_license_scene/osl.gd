@@ -30,6 +30,10 @@ func _ready() -> void:
 	Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 	""")
 
+	_build_tab("vxpMono Font",
+	"vxpMono Font: Copyright (c) voidxptr <CC-BY>"
+	) # NOTE: Please Insert attribution to the used Font here.
+
 func _build_tab(tab_name: String, license: String):
 	var lable: Label = Label.new()
 
