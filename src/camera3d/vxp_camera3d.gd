@@ -29,14 +29,14 @@ class_name vxpCamera3D
 
 
 func rotate_with_camera_y(vec:Vector3)->Vector3:
-	return vec.rotated(Vector3.UP, yaw_object.rotation.x)
+	return vec.rotated(Vector3.UP, yaw_object.global_rotation.x)
 
 func camara_view_dir_y_only()->Vector3:
 	return rotate_with_camera_y(Vector3.FORWARD)
 
 
 func rotate_with_camara(vec:Vector3)->Vector3:
-	return rotate_with_camera_y(vec).rotated(Vector3.LEFT, pitch_object.rotation.y) # There is most likely a more efficient way of dooing this.
+	return rotate_with_camera_y(vec).rotated(Vector3.LEFT, pitch_object.global_rotation.y) # There is most likely a more efficient way of dooing this.
 
 func camera_view_dir()->Vector3:
 	return rotate_with_camara(Vector3.FORWARD) # There is most likely a more efficient way of dooing this.
